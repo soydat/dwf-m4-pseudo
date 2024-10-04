@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Caja de Texto Sin Abrir */
+p.faq-item-text{
+    display: none;
+    overflow: auto;
+}
+
+:target p.faq-item-text{
+    display: initial;
+}
+
+.faq{
+    font-family: "Roboto";
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.faq h2{
+    text-wrap: wrap;
+    margin: 32px 32px 0 32px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+/* Flechita antes del Titulo */
+h3.faq-item-title::before{
+    font-size: 32px;
+    content:">";
+    color:red;
+}
+
+/* Remover decoraciones del anchor*/
+a{
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: initial;
+}
+
+@media (min-width:600px){
+    .faq h2{
+    text-wrap: wrap;
+    margin: 32px 32px 0 32px;
+    font-size: 38px;
+    font-weight: 700;
+}
+}
